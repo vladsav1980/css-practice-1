@@ -1,0 +1,227 @@
+:root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: grey;
+}
+
+#user {
+  color: blue;
+}
+
+h1,
+h2,
+button {
+  color: green;
+}
+
+div > p {
+  color: aqua;
+}
+
+div em {
+  color: violet;
+}
+
+h1 + h2 {
+  background: black;
+}
+
+h1 ~ p {
+  background: red;
+}
+
+.card-dark {
+  background: silver;
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: red;
+}
+
+.item:only-child {
+  color: coral;
+}
+
+p:first-of-type {
+  color: brown;
+}
+
+p:last-of-type {
+  color: olive;
+}
+
+article:only-of-type {
+  color: aqua;
+}
+
+.item:nth-child(2) {
+  color: black;
+}
+
+.item:nth-last-child(3) {
+  color: gold;
+}
+
+p:nth-of-type(2) {
+  color: beige;
+}
+
+p:not(.item) {
+  font-size: 2em;
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+}
+
+.input-dark {
+  background: grey;
+}
+
+.input-dark[required] {
+  background: white;
+}
+
+.input-dark[type='number'] {
+  background: blue;
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+button[class|='btn'] {
+  background: lime;
+}
+
+a[class^='btn'] {
+  background: yellow;
+}
+
+div[class*='btn'] {
+  background: red;
+}
+
+div[class$='big'] {
+  background: blue;
+}
+
+.btn::first-letter {
+  color: black;
+}
+
+.big-text::first-line {
+  color: teal;
+}
+
+.input-dark::placeholder {
+  color: yellow;
+}
+
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+}
+
+#test:target {
+  color: green;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.link:active {
+  color: purple;
+}
+
+input {
+  background: gold;
+}
+
+input:focus {
+  background: green;
+}
+
+.card:lang(en) > span:after {
+  content: '(en)';
+}
+
+.card:focus-within {
+  background: red;
+}
+
+button:enabled {
+  background: yellow;
+}
+
+button:disabled {
+  background: aqua;
+}
+
+.inp:read-only {
+  background: olive;
+}
+
+.inp:read-write {
+  background: blue;
+}
+
+input[type='checkbox']:checked + span {
+  background: blue;
+}
+
+.valid:valid {
+  background: blue;
+}
+
+.valid:invalid {
+  background: brown;
+}
+
+.valid:optional {
+  background: goldenrod;
+}
+
+input:out-of-range {
+  background: maroon;
+}
+
+input:in-range {
+  background: lime;
+}
+
+.placeholder:placeholder-shown + span {
+  background: pink;
+}
