@@ -1,12 +1,12 @@
 <div class="page">
     <header class="page_content">
         <div class="page_block">
-            <div class="header row g-0">
-                <div class="col-3">
+            <div class="header">
+                <div class="">
                     {{>logo}}
                 </div>
 
-                <nav class="header_nav col-9">
+                <nav class="header_nav">
                     <div class="header_nav_right">
                         {{>nav list=header}}
                     </div>
@@ -26,9 +26,9 @@
     </section>
 
     <section class="page_block">
-        <div class="row g-4">
+        <div class="flex_container">
             {{#each preview}}
-            <div class="col-6">
+            <div class="flex_item">
                 {{>cardPreview data=this}}
             </div>
             {{/each}}
@@ -37,18 +37,18 @@
 
     <div class="page_block">
         <main>
-            <div class="row g-0">
-                <div class="list_header col-12">
-                    <div class="row g-0">
-                        <div class="col-6">
-                            <h2 class="list_title">List of Posts</h2>
-                        </div>
-                        <div class="col-6 category_list">
-                            {{#each categories}}
-                            <button class="category_button">{{text}}</button>
-                            {{/each}}
-                        </div>
+            <div class="">
+                <div class="list_header ">
+
+
+                    <h2 class="list_title">List of Posts</h2>
+
+                    <div class="category_list">
+                        {{#each categories}}
+                        <button class="category_button">{{text}}</button>
+                        {{/each}}
                     </div>
+
                 </div>
 
                 <div class="list col-7">
@@ -78,14 +78,14 @@
 
     <footer class="page_block">
 
-        <div class="footer row g-0">
-            <div class="col-3">
+        <div class="footer">
+            <div class="">
                 {{>logo}}
                 <span class="footer_copyright">Copyright 2023</span>
             </div>
 
             {{#each footer}}
-            <div class="col-3">
+            <div class="">
                 <span class="footer_title">{{title}}</span>
                 {{>nav list=links isVertical=true}}
             </div>

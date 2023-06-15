@@ -1,3 +1,7 @@
+:root {
+  --text-color: #212529;
+}
+
 .page {
   background: #ffffff;
   padding: 0 15px;
@@ -29,7 +33,8 @@
 
 .nav_link:hover {
   text-decoration: underline;
-  color: blue;
+
+  opacity: 50%;
 }
 
 .nav_vertical > .nav_link {
@@ -68,21 +73,21 @@
 .footer_title {
   font-size: 20px;
   font-weight: 500;
-  color: #212529;
+  color: var(--text-color, #212529);
   display: block;
   margin-bottom: 12px;
 }
 
 .hero_title {
   font-size: 56px;
-  color: #212529;
+  color: var(--text-color, #212529);
   font-weight: 500;
   margin-bottom: 12px;
   text-align: center;
 }
 
 .hero_text {
-  color: #212529;
+  color: var(--text-color, #212529);
   font-size: 20px;
   text-align: center;
   max-width: 585px;
@@ -97,7 +102,7 @@
   padding: 12px;
   text-align: center;
   font-size: 24px;
-  color: #212529;
+  color: var(--text-color, #212529);
   font-weight: 400;
 }
 
@@ -116,7 +121,7 @@
 .card_price_amount {
   font-size: 40px;
   font-weight: 500;
-  color: #212529;
+  color: var(--text-color, #212529);
 }
 
 .card_price_duration {
@@ -127,7 +132,7 @@
 
 .card_description_item {
   font-size: 16px;
-  color: #212529;
+  color: var(--text-color, #212529);
   display: block;
 }
 
@@ -152,6 +157,7 @@
   outline: 2px ridge red;
   outline-offset: 5px;
   box-shadow: 2px 2px 2px 2px red;
+  opacity: 0.5;
 }
 
 .btn {
@@ -191,4 +197,76 @@ p {
   text-overflow: ellipsis;
   white-space: nowrap;
   word-spacing: 50px;
+}
+
+body {
+  background-image: url('https://placehold.co/600x400');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.page {
+  background-color: transparent;
+}
+
+.hero_text {
+  /* background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(127, 106, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border: 20px solid transparent; */
+  padding: 40px;
+  /* -webkit-background-clip: text;
+  color: transparent; */
+  border-image-source: url('https://placehold.co/600x400');
+  border-image-width: 10%;
+  border-image-slice: 10%;
+  border-image-outset: 50px;
+}
+
+.card_block {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+  list-style-image: linear-gradient(
+    to bottom right,
+    blue,
+    red
+  );
+}
+
+.card_description_item {
+  display: list-item;
+}
+
+/* .table tr {
+  border: 1px solid black;
+} */
+
+.table tr td {
+  border: 1px solid blue;
+}
+
+.table {
+  table-layout: fixed;
+  width: 600px;
+  border-collapse: unset;
+  border-spacing: 12px;
+  caption-side: top;
+  empty-cells: hide;
+}
+
+.nav_link::before {
+  content: open-quote;
+}
+
+.nav_link::after {
+  content: close-quote;
+}
+
+.calc {
+  width: 600px;
+  margin-left: calc(50% - (600px / 2));
 }
