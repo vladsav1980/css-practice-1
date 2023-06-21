@@ -1,7 +1,7 @@
 <header>
     <div class="header">
         <div class="">
-            {{>logo}}
+            <a href="#test">{{>logo}}</a>
         </div>
 
         <nav class="header_nav">
@@ -12,13 +12,26 @@
     </div>
 </header>
 
+<input type="text" class="input">
+
+<div class="modal">
+
+    <img src="{{hero.photo}}" alt="Hero image" class="modal_image">
+    <div class="modal_text">{{hero.text}}</div>
+</div>
+
 {{#with hero}}
 <div class="hero">
     <div class="hero_content">
         <h1 class="hero_title">{{title}}</h1>
         <p class="hero_text">{{text}}</p>
     </div>
-    <img src="{{photo}}" alt="hero image" class="hero_image">
+    <div class="hero_slider">
+        <div class="hero_slider_icon hero_slider_left">&lt;</div>
+        <img src="{{photo}}" alt="hero image" class="hero_image">
+        <div class="hero_slider_icon hero_slider_right">&gt;</div>
+    </div>
+
 </div>
 {{/with}}
 
@@ -27,6 +40,27 @@
     {{>cardBlog data=this}}
     {{/each}}
 </main>
+
+<main class="blog">
+    {{#each blog}}
+    {{>cardBlog data=this}}
+    {{/each}}
+</main>
+
+<main class="blog">
+    {{#each blog}}
+    {{>cardBlog data=this}}
+    {{/each}}
+</main>
+
+<main class="blog">
+    {{#each blog}}
+    {{>cardBlog data=this}}
+    {{/each}}
+</main>
+
+
+
 
 {{#with form}}
 <div class="form">
@@ -43,7 +77,7 @@
 
 <footer>
 
-    <div class="footer">
+    <div class="footer" id="test">
         <div class="">
             {{>logo}}
             <span class="footer_copyright">Copyright 2023</span>
